@@ -11,7 +11,11 @@ gulp.task("devSass", function() {
 gulp.task("devServer", function() {
     return gulp.src("src")
         .pipe(server({
-            port: 3300
+            port: 3300,
+            proxies: [{
+                source: "/api/page",
+                target: "http://localhost:3000/api/page"
+            }]
         }))
 })
 
