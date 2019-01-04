@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: .16rem;
+}
+
+@mixin num($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+html,
+body,
+.wrap {
+    @include num(100%, 100%);
+    font-size: 100px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    @include num(100%, .5rem);
+    ul {
+        @include num(100%, .5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.15rem;
+        li {
+            font-size: .16rem;
+            &.active {
+                color: pink;
+            }
+        }
+    }
+}
+
+section {
+    flex: 1;
+    overflow: hidden;
+    .section-box {
+        width: 100%;
+        li {
+            width: 100%;
+            height: 1rem;
+            text-align: center;
+            line-height: 1rem;
+            background: gold;
+            color: #fff;
+            margin-top: .05rem;
+        }
+    }
+}

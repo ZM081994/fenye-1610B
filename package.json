@@ -1,0 +1,24 @@
+{
+    "name": "fenye-1610B",
+    "version": "1.0.0",
+    "description": "fenye-1610B",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZM081994/fenye-1610B.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ZM081994/fenye-1610B/issues"
+    },
+    "homepage": "https://github.com/ZM081994/fenye-1610B#readme",
+    "devDependencies": {
+        "gulp-sass": "^4.0.2",
+        "gulp-devserver": "*"
+    }
+}
